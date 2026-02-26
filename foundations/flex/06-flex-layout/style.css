@@ -16,6 +16,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,3 +25,52 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* Solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 10px;
+}
+
+ul {
+  list-style-type: none; /* It removes bullet points from list */
+  margin: 0; /* ul or ol have default margin and padding which could interfere with our design */
+  padding: 0;
+}
+
+a {
+  text-decoration: none; /* It removes blue underline from links*/
+  color:#a09c9c;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* since direction is column, now the main-axix is in vertical */
+  align-items: center; /* so this property centers the content  */
+  justify-content: center;
+  gap: 16px; 
+  flex: 1;
+  
+}
+
+.footer {
+ 
+ display: flex;
+ justify-content: space-between;
+ padding: 14px;
+ background-color: #eeeeee;
+}
+
